@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family:sans-serif;
+}
+body{
+    background: url('cool.jpg');no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+/* */
+.warpper{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 0 20px;
+}
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+
+}
+.input-fields,
+.msg{
+width: 48%;
+}
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgb(197, 236, 253);
+    padding: 10px;
+    color: rgb(197, 236, 253);
+    width: 100%;
+}
+.msg textarea{
+        height: 212px;
+}
+::-webkit-input-placeholder{
+    color: rgb(197, 236, 253);
+}
+.btn{
+    background: rgb(59, 184, 222);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.pp{
+    color: rgb(197, 236, 253);
+}
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+}
+.msg textarea{
+    height: 80px;
+}
+.input-fields,
+.msg{
+    width: 100%;
+}
